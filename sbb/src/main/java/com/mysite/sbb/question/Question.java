@@ -39,11 +39,12 @@ public class Question {
 	private List<Answer> answerList;
 	
 	@ManyToOne /* foreign key */
-	private SiteUser author;
-	
+	private SiteUser author;	
 	private LocalDateTime modifyDate;
 	
 	@ManyToMany
 	Set<SiteUser> voter;	
+	
+	
 	
 }

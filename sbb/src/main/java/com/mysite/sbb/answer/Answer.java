@@ -25,16 +25,14 @@ public class Answer {
 	private Integer id;	
 	
 	@Column(columnDefinition = "TEXT")
-	private String content;
-	
+	private String content;	
 	private LocalDateTime createDate;
 	
 	@ManyToOne
 	private Question question;
 	
 	@ManyToOne
-	private SiteUser author;
-	
+	private SiteUser author;	
 	private LocalDateTime modifyDate;
 	
 	@ManyToMany
